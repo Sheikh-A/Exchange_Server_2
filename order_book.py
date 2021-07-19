@@ -29,7 +29,7 @@ def process_order(order):
 
     for item in orders:
         #check each item in orders
-        print(market_rate)
+        #print(market_rate)
         new_market_rate = item.sell_amount / item.buy_amount
         print(new_market_rate)
 
