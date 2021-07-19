@@ -25,7 +25,7 @@ def process_order(order):
 
     orders = session.query(Order).filter(Order.buy_currency == order.sell_currency).filter(Order.sell_currency == order.buy_currency).filter(Order.filled == None).all()
     market_rate = 0.0
-    id = -1
+    id = None
 
     for item in orders:
         #check each item in orders
