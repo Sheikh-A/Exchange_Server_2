@@ -31,7 +31,7 @@ def process_order(order):
         #check each item in orders
         #print(market_rate)
         new_market_rate = item.sell_amount / item.buy_amount
-        print(new_market_rate)
+        #print(new_market_rate)
 
         if new_market_rate < market_rate:
             continue
